@@ -1,0 +1,7 @@
+sheet	col	row	keystrokes	input	comment
+			o	data/waterloo/NTDB_roads_rmow.shp	open file
+NTDB_roads_rmow	FIR_ROADNO	0	toggle-curcol-key		pin current column on the left as a key column
+NTDB_roads_rmow	SEC_ROADNO	0	g.		
+NTDB_roads_rmow_map	0	0	O		open Options
+options	option	63	^J	t	edit option
+options	option	63	q		quit current sheet
