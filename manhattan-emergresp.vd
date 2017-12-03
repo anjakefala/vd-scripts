@@ -1,0 +1,11 @@
+sheet	col	row	keystrokes	input	comment
+			o	data/Emergency_Response_Incidents.csv	open file
+Emergency_Response_Incidents	Latitude	0	%		set type of current column to float
+Emergency_Response_Incidents	Latitude	0	!		pin current column on the left as a key column
+Emergency_Response_Incidents	Longitude	0	%		set type of current column to float
+Emergency_Response_Incidents	Borough	0	F		open Frequency Table grouped on current column
+Emergency_Response_Incidents_Borough_freq	Borough	0	^J		open sheet of source rows which are grouped in current cell
+Emergency_Response_Incidents_Manhattan	Incident Type	0	:	-	add new columns from regex split; # columns determined by example row at cursor
+Emergency_Response_Incidents_Manhattan	Incident Type_re0	0	!		pin current column on the left as a key column
+Emergency_Response_Incidents_Manhattan	Longitude	0	.		graph the current column vs key columns Numeric key column is on the x-axis, while categorical key columns determin color
+Emergency_Response_Incidents_Manhattan_graph	0	0	z_	1.0	set aspect ratio
